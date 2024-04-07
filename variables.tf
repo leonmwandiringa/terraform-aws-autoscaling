@@ -31,6 +31,12 @@ variable "availability_zones" {
   default = []
 }
 
+variable "vpc_zone_identifier" {
+  type = list(string)
+  description = "vpc zone identifier"
+  default = []
+}
+
 variable "monitoring_enabled" {
   type = bool
   description = "launch template monitoring"

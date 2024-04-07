@@ -6,6 +6,7 @@ resource "aws_autoscaling_group" "default" {
   health_check_grace_period = var.health_check_grace_period
   health_check_type = var.health_check_type
   protect_from_scale_in     = var.protect_from_scale_in
+  vpc_zone_identifier = var.vpc_zone_identifier
 
   dynamic "tag" {
     for_each = var.asg_tags
