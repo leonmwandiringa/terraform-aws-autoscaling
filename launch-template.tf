@@ -5,8 +5,8 @@ resource "aws_launch_template" "default" {
   vpc_security_group_ids = var.vpc_security_group_ids
 
   iam_instance_profile {
-    name = var.name_prefix
-    arn = var.instances_role_arn
+    name = "${var.name_prefix}-instance-profile"
+    arn = var.instance_profile_arn
   }
 
   metadata_options {

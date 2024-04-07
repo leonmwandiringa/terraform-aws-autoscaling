@@ -72,9 +72,9 @@ variable "name_prefix" {
   description = "asg instances prefix"
 }
 
-variable "instances_role_arn" {
+variable "instance_profile_arn" {
   type = string
-  description = "role arn for instances"
+  description = "instance profile arn attached to role for instances"
 }
 
 variable "image_id" {
