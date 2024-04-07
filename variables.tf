@@ -114,6 +114,12 @@ variable "protect_from_scale_in" {
   description = "protect as from scale in"
 }
 
+variable "vpc_security_group_ids" {
+  default = []
+  description = "instances security group"
+  type = list(string)
+}
+
 variable "launch_template_version" {
   type = string
   default = "$Latest"
